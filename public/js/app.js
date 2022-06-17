@@ -1,7 +1,7 @@
 const contactform = document.querySelector('.contact-form');
 let name = document.getElementById('name');
 let email = document.getElementById('email');
-let subject = document.getElementById('subject');
+let subject = document.getElementById('address');
 let message = document.getElementById('message');
 
 
@@ -11,7 +11,7 @@ contactform.addEventListener('submit', (x) => {
     let formData = {
         name: name.value,
         email: email.value,
-        subject: subject.value,
+        address: address.value,
         message: message.value
     }
 
@@ -24,7 +24,7 @@ contactform.addEventListener('submit', (x) => {
             alert('Credenziali inviati');
             name.value = '';
             email.value = '';
-            subject.value = '';
+            address.value = '';
             message.value = '';
         } else {
             alert('Error!');
